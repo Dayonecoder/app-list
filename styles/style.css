@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  overflow: hidden;
+  color: #fff;
+}
+
+:root{
+  ---darker-black: #090B0B;
+  --dark-black: #333;
+  --green-color: #53D1C8;
+}
+
+.container{
+  width: 100%;
+  margin: auto;
+}
+
+header{
+  height: 120px;
+  position: relative;
+  background-color: var(---darker-black);
+}
+
+header nav ul {
+  gap: 20px;
+}
+
+header nav ul li{
+  padding-bottom: 10px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+header nav ul li:hover{
+  color: var(--green-color);
+  border-bottom: 3px solid var(--green-color);
+}
+
+header div{
+  position: absolute;
+  right: 100px;
+  bottom: 10px;
+}
+
+nav{
+  position: absolute;
+  left: 100px;
+  bottom: 0;
+}
+
+section{
+  height: 100vh;
+  width: 100%;
+  padding: 25px 100px;
+  background-color: var(--dark-black);
+}
+
+h1{
+  font-size: 1.4rem;
+}
+
+.hero-description p{
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.hero-description{
+  line-height: 1.3rem;
+  margin-bottom:  20px;
+}
+
+.apps-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px
+}
+
+.app-card{
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  animation: 0.3s ease-in-out;
+  box-shadow: 1px 1px 20px 10px rgba(0, 0, 0, 0.1);
+}
+
+.app-card:hover{
+  opacity: 0.8;
+}
+
+.app-thumbnail{
+  height: 4rem;
+  width: 4rem;
+}
+
+h2{
+  font-size: 0.7rem;
+}
+
+.app-details{
+  line-height: 16px;
+}
+
+.app-details p{
+  font-size: 0.7rem;
+}
+.star-rating{
+  gap: 1px;
+  align-items: center;
+}
+
+.star-full{
+  color: gold;
+  font-size: 0.4rem;
+}
+
+.star-empty{
+  color: var(---darker-black);
+  font-size: 0.4rem;
+}
+
+button{
+  border: none;
+  background-color: var(---darker-black);
+  border-bottom: 2px solid var(--green-color);
+  color: #fff;
+  margin-top: 5px;
+  font-size: 0.6rem;
+  padding: 7px;
+}
+
+
+/* Utilities */
+
+.flex-row{
+   display: flex;
+ flex-direction: row;
+}
